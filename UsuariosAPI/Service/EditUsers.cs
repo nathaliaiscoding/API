@@ -9,14 +9,14 @@ namespace UsuariosAPI.Service
     {
 
         static List<User> Users { get; }
-        static int nextId = 2;
+        static int nextId = 1;
 
         static EditUsers()
         {
             Users = new List<User>
-        {
-            new User {UserId = 1, UserFirstName = "Nathalia", UserLastName = "Laudano", UserAge = 29}
-        };
+            {
+                //    new User {UserId = 1, UserName = "Nathalia", Password = "nathalia123"}
+            };
         }
 
         public static List<User> GetAll() => Users;
